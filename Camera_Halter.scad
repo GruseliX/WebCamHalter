@@ -11,6 +11,7 @@ $fs = 0.1;
 show_base = true;
 // Scharaube
 show_screw = true;
+// Gehäuse
 show_housing = true;
 
 /* [Befestigung] */
@@ -130,7 +131,7 @@ module base_plate()
 			// border
 			translate([ 0, 0, 0 ])
 			{
-				% rect_tube(size = dim_border[0] + wall_border, wall = wall_border, rounding = 0.5, h = 4);
+				rect_tube(size = dim_border[0] + wall_border, wall = wall_border, rounding = 0.5, h = 4);
 			}
 		}
 	}
